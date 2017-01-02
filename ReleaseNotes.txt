@@ -1,3 +1,7 @@
+Release notes 2.0.1
+
+- Mining update
+
 Release notes 2.0.0
 
 - Fantomcoin 2.0 by XDN-project, major FCN update to the latest cryptonotefoundation codebase

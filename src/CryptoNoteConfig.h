@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2016 The Cryptonote developers
-// Copyright (c) 2016 XDN developers
+// Copyright (c) 2016-2017 XDN-project developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -66,7 +66,9 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 const char     CRYPTONOTE_NAME[]                             = "fantomcoin";
 const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff0001ffffffffff7f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101837e6089a1bc90a77253e38ac12bcb870b6ae354389794ec18dab07f3424339f";
 
-const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
+const uint8_t  TRANSACTION_VERSION_1                         =  1;
+const uint8_t  TRANSACTION_VERSION_2                         =  2;
+const uint8_t  CURRENT_TRANSACTION_VERSION                   =  TRANSACTION_VERSION_1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_2                         =  2;
 const uint8_t  BLOCK_MAJOR_VERSION_3                         =  3;
@@ -116,6 +118,7 @@ __attribute__((unused))
 // {<block height>, "<block hash>"},
 const std::initializer_list<CheckpointData> CHECKPOINTS = {
     { 1290000, "734fa39ed0986b2f99d44a583190ad1694310ec88d330a1898a904ce248bf54f" },
+    { 1387000, "854bc0e2c511e83380970ae263723c4eea2fcd37ce3f808a7b58971da0399be5" },
 };
 } // CryptoNote
 
