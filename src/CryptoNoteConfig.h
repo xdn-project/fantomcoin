@@ -79,7 +79,7 @@ const uint32_t HARDFORK_HEIGHT_2                             = 1;
 const uint32_t HARDFORK_HEIGHT_3                             = 1297000;
 
 const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT        =  10000;  //by default, blocks ids count in synchronizing
-const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  200;    //by default, blocks count in blocks downloading
+const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  128;    //by default, blocks count in blocks downloading
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT         =  1000;
 
 const int      P2P_DEFAULT_PORT                              = 24080;
@@ -88,7 +88,7 @@ const int      RPC_DEFAULT_PORT                              = 24081;
 const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT                =  1000;
 const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT                 =  5000;
 
-const size_t   P2P_CONNECTION_MAX_WRITE_BUFFER_SIZE          = 16 * 1024 * 1024; // 16 MB
+const size_t   P2P_CONNECTION_MAX_WRITE_BUFFER_SIZE          = 64 * 1024 * 1024; // 64 MB
 const uint32_t P2P_DEFAULT_CONNECTIONS_COUNT                 = 8;
 const size_t   P2P_DEFAULT_WHITELIST_CONNECTIONS_PERCENT     = 70;
 const uint32_t P2P_DEFAULT_HANDSHAKE_INTERVAL                = 60;            // seconds
@@ -120,6 +120,7 @@ const std::initializer_list<CheckpointData> CHECKPOINTS = {
     { 1290000, "734fa39ed0986b2f99d44a583190ad1694310ec88d330a1898a904ce248bf54f" },
     { 1387000, "854bc0e2c511e83380970ae263723c4eea2fcd37ce3f808a7b58971da0399be5" },
     { 1583230, "603d61240780cc409227900f4a1a8a45278a1c583372120ab8b59cc0351b4013" },
+    { 1715020, "4014176cf3f471059027d72777f3685a55c24da21951e57c41e1bd8ef12e4275" },
 };
 } // CryptoNote
 

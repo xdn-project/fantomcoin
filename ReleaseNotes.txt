@@ -1,3 +1,7 @@
+Release notes 2.0.3
+
+- Blockchain synchronization improvements
+
 Release notes 2.0.2
 
 - Latest checkpoints and fixes
